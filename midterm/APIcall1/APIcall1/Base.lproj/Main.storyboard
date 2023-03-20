@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="APIcall1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Stock Symbol" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-kM-0l2">
+                                <rect key="frame" x="5" y="409" width="383" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9z-DJ-qgf">
+                                <rect key="frame" x="118.66666666666667" y="477" width="155.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Stock Details"/>
+                                <connections>
+                                    <action selector="getStockDetailsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRp-1g-LPE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M21-dU-y5l">
+                                <rect key="frame" x="135.66666666666666" y="533" width="121.99999999999997" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izv-IJ-0OT">
+                                <rect key="frame" x="165.66666666666666" y="633" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzp-aB-Sz9">
+                                <rect key="frame" x="177.33333333333334" y="588" width="38.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Lzp-aB-Sz9" secondAttribute="bottom" constant="243" id="3GE-Y0-36A"/>
+                            <constraint firstItem="h9z-DJ-qgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6R1-DO-kOZ"/>
+                            <constraint firstItem="wLS-kM-0l2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="FkZ-wI-OrU"/>
+                            <constraint firstItem="wLS-kM-0l2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I4F-Ex-SAR"/>
+                            <constraint firstItem="Lzp-aB-Sz9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UC4-f6-Afy"/>
+                            <constraint firstItem="M21-dU-y5l" firstAttribute="top" secondItem="h9z-DJ-qgf" secondAttribute="bottom" constant="21" id="Xgu-1O-iSl"/>
+                            <constraint firstItem="wLS-kM-0l2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZGa-ZI-3Be"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wLS-kM-0l2" secondAttribute="trailing" constant="5" id="fCT-D0-TGj"/>
+                            <constraint firstItem="Izv-IJ-0OT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hwz-1t-vXt"/>
+                            <constraint firstItem="Lzp-aB-Sz9" firstAttribute="top" secondItem="M21-dU-y5l" secondAttribute="bottom" constant="34" id="p6k-Jn-PIk"/>
+                            <constraint firstItem="Izv-IJ-0OT" firstAttribute="top" secondItem="Lzp-aB-Sz9" secondAttribute="bottom" constant="24" id="uIS-Bl-qnk"/>
+                            <constraint firstItem="M21-dU-y5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zQK-Fu-hXt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCompanyName" destination="M21-dU-y5l" id="dRr-qb-Apw"/>
+                        <outlet property="lblPrice" destination="Lzp-aB-Sz9" id="Av8-ge-1oa"/>
+                        <outlet property="lblWebsite" destination="Izv-IJ-0OT" id="Pgk-fd-chZ"/>
+                        <outlet property="txtStockSymbol" destination="wLS-kM-0l2" id="fv8-T3-moi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
